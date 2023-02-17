@@ -75,3 +75,36 @@ else{
     console.log('company not found')
 }
 
+//14.
+let itCompaniesFiltered = []
+itCompanies.map(comp => {if((comp.match(/o/gi) == null) || (comp.match(/o/gi).length <= 1)){itCompaniesFiltered.push(comp)}})
+console.log(itCompaniesFiltered)
+
+//15.
+console.log(itCompanies.sort())
+
+//16.
+console.log(itCompanies.sort())
+
+//17.
+console.log(itCompanies)
+console.log(itCompanies.slice(0, 3))
+
+//18.
+console.log(itCompanies.slice(itCompanies.length - 3, itCompanies.length))
+
+//19.
+console.log(itCompanies.slice(itCompanies.length/2, (itCompanies.length/2)+1))
+
+//20.
+itCompanies.splice(0, 1)
+console.log(itCompanies)
+
+//21.
+itCompanies.splice(itCompanies.length/2, 1)
+
+//22.
+itCompanies.splice(itCompanies.length-1, 1)
+
+//23.
+itCompanies.splice(0, itCompanies.length)
